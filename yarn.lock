@@ -251,7 +251,7 @@
     "ansi-styles" "^4.1.0"
     "supports-color" "^7.1.0"
 
-"chokidar@^3.5.1":
+"chokidar@^3.5.1", "chokidar@^3.5.3":
   "integrity" "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz"
   "version" "3.5.3"
@@ -789,6 +789,8 @@
     "postgres-interval" "^1.1.0"
 
 "pg@^8.4.0", "pg@^8.5.1", "pg@>=8.0":
+  "integrity" "sha512-HPmH4GH4H3AOprDJOazoIcpI49XFsHCe8xlrjHkWiapdbHK+HLtbm/GQzXYAZwmPju/kzKhjaSfMACG+8cgJcw=="
+  "resolved" "https://registry.npmjs.org/pg/-/pg-8.7.3.tgz"
   "version" "8.7.3"
   dependencies:
     "buffer-writer" "2.0.0"
@@ -1113,6 +1115,8 @@
     "mime-types" "~2.1.24"
 
 "typeorm@0.3.2":
+  "integrity" "sha512-uuAylm4lYlYDm4ZEawbvjlcfdx9javiJOD/ukvbZK9VoTUz+1iPjGFllVyDlg4mHwp0PHURMKTcbGM+BLwAvXg=="
+  "resolved" "https://registry.npmjs.org/typeorm/-/typeorm-0.3.2.tgz"
   "version" "0.3.2"
   dependencies:
     "@sqltools/formatter" "^1.2.2"
