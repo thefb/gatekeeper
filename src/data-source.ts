@@ -1,6 +1,5 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-import { User } from "./entity/User";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -10,8 +9,12 @@ export const AppDataSource = new DataSource({
   password: "POlk1230",
   database: "test",
   synchronize: true,
-  logging: false,
-  entities: [User],
-  migrations: [],
-  subscribers: [],
+  entities: ["entity/*.ts"],
+  migrations: ["migration/*.ts"],
 });
+
+AppDataSource.initialize()
+  .then(() => console.log("connect to the database 📦"))
+  .catch((err) => {
+    console.error("Error during Data Source initialization", err);
+  });
